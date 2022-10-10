@@ -1,7 +1,7 @@
-function App() {
+function Home() {
   return (
     <div>Kasa</div>
   );
 }
 
-export default App;
+export default Home;
