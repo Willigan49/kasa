@@ -1,12 +1,19 @@
+@use "../styles/utils/mixins" as m;
+@use "../components/Header/Header";
+
 .wrapper {
-  width: 1240px;
+  @include m.desktop {
+    max-width: 1240px;
+    margin-top: 40px;
+  }
+  max-width: 335px;
   margin: auto;
-  margin-top: 40px;
   font-family: "Montserrat";
+  width: 100%;
   a {
     text-decoration: none;
   }
-  li{
+  li {
     list-style: none;
   }
 }

@@ -1,0 +1,35 @@
+@use "../../styles/utils/mixins" as m;
+@use "../../styles/utils/variables" as v;
+
+.header,
+.menu {
+  display: flex;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  .menu {
+    @include m.desktop {
+      gap: 35px;
+    }
+    gap: 15px;
+  }
+  a {
+    @include m.desktop {
+      font-size: 24px;
+    }
+    font-size: 12px;
+    color: v.$primary-color;
+    white-space: nowrap;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .logo {
+    @include m.desktop {
+      width: 210px;
+    }
+    width: 145px;
+  }
+}
