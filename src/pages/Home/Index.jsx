@@ -1,7 +1,7 @@
-function Home() {
+export default function Home() {
   return (
-    <div>Kasa</div>
+    <div>
+      <h1>HomePage</h1>
+    </div>
   );
 }
-
-export default Home;
