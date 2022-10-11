@@ -1,0 +1,12 @@
+.wrapper {
+  width: 1240px;
+  margin: auto;
+  margin-top: 40px;
+  font-family: "Montserrat";
+}
+.wrapper a {
+  text-decoration: none;
+}
+.wrapper li {
+  list-style: none;
+}/*# sourceMappingURL=index.css.map */
