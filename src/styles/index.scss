@@ -1,5 +1,4 @@
 @use "../styles/utils/mixins" as m;
-@use "../components/Header/Header";
 
 .wrapper {
   @include m.desktop {
