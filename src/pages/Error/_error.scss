@@ -1,0 +1,31 @@
+@use "../../styles/utils/mixins" as m;
+@use "../../styles/utils/variables" as v;
+
+.error {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  &__description h1 {
+    font-size: 288px;
+    margin: 0;
+    color: v.$primary-color;
+  }
+  &__description p {
+    font-size: 36px;
+    color: v.$primary-color;
+  }
+  a {
+    @include m.desktop {
+      font-size: 18px;
+    }
+    font-size: 12px;
+    color: v.$primary-color;
+    white-space: nowrap;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

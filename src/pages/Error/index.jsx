@@ -1,10 +1,17 @@
 import Header from "../../components/Header";
+import { Link } from "react-router-dom";
 
 export default function ErrorPage() {
   return (
     <div className="wrapper">
       <Header />
-      <h1>Erreur</h1>
+      <div className="error">
+        <div className="error__description">
+          <h1>404</h1>
+          <p>Oups! La page que vous demandez n'existe pas.</p>
+        </div>
+        <Link className="" to="/">Retourner sur la page d'Accueil</Link>
+      </div>
     </div>
   );
 }

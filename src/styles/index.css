@@ -87,7 +87,39 @@
   height: 223px;
 }
 
+.error {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.error__description h1 {
+  font-size: 288px;
+  margin: 0;
+  color: #FF6060;
+}
+.error__description p {
+  font-size: 36px;
+  color: #FF6060;
+}
+.error a {
+  font-size: 12px;
+  color: #FF6060;
+  white-space: nowrap;
+}
+@media screen and (min-width: 500px) {
+  .error a {
+    font-size: 18px;
+  }
+}
+.error a:hover {
+  text-decoration: underline;
+}
+
 .wrapper {
+  height: 100vh;
   max-width: 335px;
   margin: auto;
   margin-top: 20px;

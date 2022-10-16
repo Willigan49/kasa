@@ -1,8 +1,10 @@
 @use "../styles/utils/mixins" as m;
 @use "../components/Header/Header";
 @use "../components/ImageTop/ImageTop";
+@use "../pages/Error/error";
 
 .wrapper {
+  height: 100vh;
   @include m.desktop {
     max-width: 1240px;
     margin-top: 40px;
