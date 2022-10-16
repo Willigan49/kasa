@@ -1,4 +1,6 @@
 @use "../styles/utils/mixins" as m;
+@use "../components/Header/Header";
+@use "../components/ImageTop/ImageTop";
 
 .wrapper {
   @include m.desktop {
@@ -7,6 +9,7 @@
   }
   max-width: 335px;
   margin: auto;
+  margin-top: 20px;
   font-family: "Montserrat";
   width: 100%;
   a {

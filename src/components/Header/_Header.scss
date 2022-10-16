@@ -26,7 +26,7 @@
       text-decoration: underline;
     }
   }
-  .logo {
+  &__logo {
     @include m.desktop {
       width: 210px;
     }

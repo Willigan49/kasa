@@ -1,0 +1,45 @@
+@use "../../styles/utils/mixins" as m;
+@use "../../styles/utils/variables" as v;
+
+.image-top {
+  width: v.$full;
+  height: 111px;
+  border-radius: 10px;
+  background: #000000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  @include m.desktop {
+    height: 223px;
+    border-radius: v.$bradius-desktop;
+    margin-top: 45px;
+  }
+  &__image {
+    width: v.$full;
+    height: v.$full;
+    object-fit: cover;
+    opacity: 0.7;
+    border-radius: 10px;
+    @include m.desktop {
+      border-radius: v.$bradius-desktop;
+    }
+  }
+  &__text {
+    color: white;
+    position: absolute;
+    font-weight: 200;
+    font-size: 24px;
+    margin-left: 15px;
+    width: 220px;
+    @include m.desktop {
+        font-size: 48px;
+        width: v.$full;
+        text-align: center;
+    }
+  }
+}
+
+.about{
+  height: 223px;
+}
