@@ -6,7 +6,9 @@ import Header from "./components/Header";
 import Error from "./pages/Error/index";
 import About from "./pages/About";
 import Home from "./pages/Home/Index";
+import Footer from "./components/Footer";
 import { createBrowserRouter } from "react-router-dom";
+import Location from "./pages/Location";
 import "./styles/index.css";
 
 const router = createBrowserRouter([
@@ -18,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/location/:id",
+        element: <Location />,
       },
       {
         path: "/about",
@@ -39,6 +45,7 @@ function Root() {
     <div className="wrapper">
       <Header />
       <Outlet />
+      <Footer />
     </div>
   );
 }

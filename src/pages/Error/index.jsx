@@ -1,4 +1,5 @@
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 
 export default function ErrorPage() {
@@ -12,6 +13,7 @@ export default function ErrorPage() {
         </div>
         <Link className="" to="/">Retourner sur la page d'Accueil</Link>
       </div>
+      <Footer />
     </div>
   );
 }

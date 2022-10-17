@@ -1,7 +1,10 @@
 @use "../styles/utils/mixins" as m;
+@use "../pages/Home/Home";
+@use "../pages/Error/error";
 @use "../components/Header/Header";
 @use "../components/ImageTop/ImageTop";
-@use "../pages/Error/error";
+@use "../components/Footer/footer";
+@use "../components/LocationCard/LocationCard";
 
 .wrapper {
   height: 100vh;
