@@ -1,10 +1,18 @@
 import ImageTop from "../../components/ImageTop";
 import image from "../../assets/home.jpg";
-import { locations } from "../../api/logements";
-import LocationCard from "../../components/LocationCard";
+import RentalCard from "../../components/RentalCard";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [rentals, setRentals] = useState([]);
+
+  useEffect(() => {
+    fetch("rentals.json")
+    .then((response) => response.json())
+    .then((result) => setRentals(result));
+  }, []);
+
   return (
     <main>
       <ImageTop
@@ -13,12 +21,12 @@ export default function Home() {
         alt="home top image"
         text="Chez vous, partout et ailleurs"
       />
-      <div className="location-container">
+      <div className="rental-container">
         <ul>
-          {locations.map((location) => (
-            <li key={`${location.title}-${location.id}`}>
-              <Link to={`/location/${location.id}`}>
-                <LocationCard image={location.cover} title={location.title} />
+          {rentals.map((rental) => (
+            <li key={`${rental.title}-${rental.id}`}>
+              <Link to={`/rental/${rental.id}`}>
+                <RentalCard image={rental.cover} title={rental.title} />
               </Link>
             </li>
           ))}

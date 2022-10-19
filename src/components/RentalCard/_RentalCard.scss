@@ -1,6 +1,6 @@
 @use "../../styles/utils/mixins" as m;
 
-.location-card {
+.rental-card {
   width: 335px;
   height: 255px;
   background: linear-gradient(
@@ -10,7 +10,7 @@
   );
   position: relative;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: column;
   border-radius: 10px;
   @include m.desktop {
@@ -22,12 +22,12 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    opacity: 0.4;
+    opacity: 0.5;
   }
   &__title {
     color: white;
     position: absolute;
-    font-weight: 200;
+    font-weight: 500;
     font-size: 18px;
     margin-left: 15px;
     width: 200px;

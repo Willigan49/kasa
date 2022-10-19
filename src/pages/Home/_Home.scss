@@ -1,6 +1,6 @@
 @use "../../styles/utils/mixins" as m;
 
-.location-container {
+.rental-container {
   background: none;
   @include m.desktop {
     border-radius: 25px;

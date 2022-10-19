@@ -4,7 +4,8 @@
 @use "../components/Header/Header";
 @use "../components/ImageTop/ImageTop";
 @use "../components/Footer/footer";
-@use "../components/LocationCard/LocationCard";
+@use "../components/RentalCard/RentalCard";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .wrapper {
   height: 100vh;

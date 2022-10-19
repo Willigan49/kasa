@@ -1,15 +1,16 @@
-.location-container {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.rental-container {
   background: none;
 }
 @media screen and (min-width: 500px) {
-  .location-container {
+  .rental-container {
     border-radius: 25px;
     padding: 50px;
     margin: 45px 0;
     background: #f7f7f7;
   }
 }
-.location-container ul {
+.rental-container ul {
   gap: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +18,7 @@
   padding: 0;
 }
 @media screen and (min-width: 500px) {
-  .location-container ul {
+  .rental-container ul {
     gap: 60px;
     margin: 0;
   }
@@ -126,7 +127,7 @@
 .image-top__text {
   color: white;
   position: absolute;
-  font-weight: 200;
+  font-weight: 500;
   font-size: 24px;
   margin-left: 15px;
   width: 220px;
@@ -168,34 +169,34 @@
   }
 }
 
-.location-card {
+.rental-card {
   width: 335px;
   height: 255px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   position: relative;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: column;
   border-radius: 10px;
 }
 @media screen and (min-width: 500px) {
-  .location-card {
+  .rental-card {
     width: 340px;
     height: 340px;
   }
 }
-.location-card__image {
+.rental-card__image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
-  opacity: 0.4;
+  opacity: 0.5;
 }
-.location-card__title {
+.rental-card__title {
   color: white;
   position: absolute;
-  font-weight: 200;
+  font-weight: 500;
   font-size: 18px;
   margin-left: 15px;
   width: 200px;
