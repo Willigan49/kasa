@@ -1,0 +1,12 @@
+.rating{
+    display: flex;
+    &__active-star{
+        color: #FF6060;
+        width: 3%;
+    }
+    &__star{
+        color: #E3E3E3;
+        width: 3%;
+        ;
+    }
+}
