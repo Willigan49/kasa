@@ -15,6 +15,9 @@ export default function Home() {
       });
   }, []);
 
+  if (rentals.length === 0) {
+    return <h1>loading</h1>;
+  }
   return (
     <main>
       <ImageTop

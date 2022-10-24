@@ -55,6 +55,27 @@
   text-decoration: underline;
 }
 
+.rental .informations {
+  display: flex;
+  justify-content: space-between;
+}
+.rental .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.rental__host {
+  display: flex;
+  align-items: center;
+}
+.rental__rating {
+  width: 12em;
+}
+.rental__tags {
+  display: flex;
+  gap: 2em;
+}
+
 .header,
 .menu {
   display: flex;
@@ -239,7 +260,7 @@
 }
 @media screen and (min-width: 500px) {
   .slider__left-arrow {
-    width: 2%;
+    width: 3%;
   }
 }
 .slider__right-arrow {
@@ -252,20 +273,19 @@
 }
 @media screen and (min-width: 500px) {
   .slider__right-arrow {
-    width: 2%;
+    width: 3%;
   }
 }
 
 .rating {
   display: flex;
+  gap: 7px;
 }
 .rating__active-star {
   color: #FF6060;
-  width: 3%;
 }
 .rating__star {
   color: #E3E3E3;
-  width: 3%;
 }
 
 .wrapper {

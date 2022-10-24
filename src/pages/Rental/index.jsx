@@ -12,7 +12,6 @@ export default function Rental() {
       .then((response) => response.json())
       .then((result) => {
         const rental = result.find((rental) => rental.id === id);
-        console.log(rental);
         setRental(rental);
       });
   }, [id]);
@@ -23,8 +22,8 @@ export default function Rental() {
   return (
     <div className="rental">
       <Slider slides={rental.pictures} />
-      <div>
-        <div className="left-informations">
+      <div className="informations">
+        <div className="left">
           <h2 className="rental__name">{rental.title}</h2>
           <p className="rental__location">{rental.location}</p>
           <ul className="rental__tags">
@@ -33,12 +32,12 @@ export default function Rental() {
             ))}
           </ul>
         </div>
-        <div className="right-informations">
+        <div className="right">
           <div className="rental__host">
             <p>{rental.host.name}</p>
             <img src={rental.host.picture} alt={rental.host.name} />
           </div>
-          <div className="rental__note">
+          <div className="rental__rating">
             <Rating stars={rental.rating} />
           </div>
         </div>

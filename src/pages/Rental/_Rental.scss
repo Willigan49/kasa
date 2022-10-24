@@ -1,0 +1,22 @@
+.rental {
+  .informations {
+    display: flex;
+    justify-content: space-between;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__host {
+    display: flex;
+    align-items: center;
+  }
+  &__rating {
+    width: 12em;
+  }
+  &__tags {
+    display: flex;
+    gap: 2em;
+  }
+}

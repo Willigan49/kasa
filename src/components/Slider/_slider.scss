@@ -30,7 +30,7 @@
         color: white;
         cursor: pointer;
         @include m.desktop{
-            width: 2%;
+            width: 3%;
         }
     }
     &__right-arrow{
@@ -41,7 +41,7 @@
         color: white;
         cursor: pointer;
         @include m.desktop{
-            width: 2%;
+            width: 3%;
         }
     }
 }
