@@ -1,0 +1,47 @@
+@use "../../styles/utils/mixins" as m;
+.slider{
+    margin: 20px 0;
+    position: relative;
+    height: 255px;
+    @include m.desktop{
+        margin: 40px 0;
+        height: 415px;
+    }
+    .slide {
+        opacity: 0;
+        transition-duration: 1s ease;
+    }
+    .slide-active{
+        opacity: 1;
+        transition-duration: 1s;
+        height: 100%;
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        height: 100%;
+    }
+    &__left-arrow{
+        position: absolute;
+        top: 45%;
+        left: 2%;
+        width: 5%;
+        color: white;
+        cursor: pointer;
+        @include m.desktop{
+            width: 2%;
+        }
+    }
+    &__right-arrow{
+        position: absolute;
+        top: 45%;
+        right: 2%;
+        width: 5%;
+        color: white;
+        cursor: pointer;
+        @include m.desktop{
+            width: 2%;
+        }
+    }
+}

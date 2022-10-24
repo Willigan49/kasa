@@ -9,8 +9,10 @@ export default function Home() {
 
   useEffect(() => {
     fetch("rentals.json")
-    .then((response) => response.json())
-    .then((result) => setRentals(result));
+      .then((response) => response.json())
+      .then((result) => {
+        setRentals(result);
+      });
   }, []);
 
   return (

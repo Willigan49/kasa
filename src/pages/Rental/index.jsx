@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Slider from "../../components/Slider";
 
 export default function Rental() {
   const { id } = useParams();
@@ -10,13 +11,28 @@ export default function Rental() {
       .then((response) => response.json())
       .then((result) => {
         const rental = result.find((rental) => rental.id === id);
+        console.log(rental);
         setRental(rental);
       });
   }, [id]);
 
+  if (rental.length === 0) {
+    return <h1>loading</h1>;
+  }
   return (
     <div>
-      <h1>Fiche location {rental.title}</h1>
+      <Slider slides={rental.pictures} />
+      <div>
+        <div>
+          <h2>{rental.title}</h2>
+          <p>{rental.location}</p>
+          <ul>
+            {rental.tags.map((tag) => (
+              <li key={tag}>{tag}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
