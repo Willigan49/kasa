@@ -8,8 +8,14 @@
 @use "../components/RentalCard/RentalCard";
 @use "../components/Slider/slider";
 @use "../components/Rating/Rating";
+@use "../components/Tag/Tag";
+@use "../components/Dropdown/Dropdown";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+*{
+  margin: 0;
+  padding: 0;
+}
 .wrapper {
   height: 100vh;
   @include m.desktop {

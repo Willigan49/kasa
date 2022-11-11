@@ -13,8 +13,6 @@ export default function Slider({ slides }) {
     setCurrent(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
   }
 
-  console.log(currentSlide);
-
   return (
     <section className="slider">
       {slides.length > 1 ? (

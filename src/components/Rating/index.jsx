@@ -7,7 +7,7 @@ export default function Rating({ stars }) {
   return (
     <div className="rating">
       {[...new Array(totalStars)].map((arr, index) => {
-         return index < activeStars ? <Star className="rating__active-star" /> : <Star className="rating__star"/>;
+         return index < activeStars ? <Star key={index} className="rating__active-star" /> : <Star key={index} className="rating__star"/>;
       })}
     </div>
   );

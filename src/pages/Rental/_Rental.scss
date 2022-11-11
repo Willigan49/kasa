@@ -1,22 +1,50 @@
 .rental {
-  .informations {
-    display: flex;
-    justify-content: space-between;
-  }
-  .right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
   &__host {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    font-weight: 500;
+    color: #ff6060;
+    font-size: 18px;
   }
   &__rating {
-    width: 12em;
+    width: 10em;
   }
   &__tags {
     display: flex;
-    gap: 2em;
+    gap: 1em;
   }
+  &__title {
+    font-size: 36px;
+    font-weight: 500;
+    color: #ff6060;
+  }
+  &__location {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  &__host-picture{
+    border-radius: 50%;
+    width: 65px;
+  }
+}
+
+.informations {
+  display: flex;
+  justify-content: space-between;
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+  }
+}
+
+.dropdowns{
+  display: flex;
+  justify-content: space-between;
 }
