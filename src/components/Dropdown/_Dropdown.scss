@@ -1,8 +1,9 @@
 @use "../../styles/utils/variables" as v;
 
 .dropdown {
-  width: 582px;
-  margin: 30px 0;
+  max-width: 1025px;
+  width: 100%;
+  margin: 15px 0;
 }
 
 .dropdown-header {
@@ -18,17 +19,6 @@
   }
 }
 
-#rotate {
-  -moz-transition: all 0.5s linear;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-.down {
-  -moz-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
 .content {
   background-color: #f6f6f6;
   display: flex;
@@ -41,4 +31,5 @@
 
 .close{
     display: none;
+    transition: 0.2s ease-in-out;
 }

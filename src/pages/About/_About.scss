@@ -1,0 +1,8 @@
+@use "../../styles/utils/variables" as v;
+
+.about-dropdowns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
