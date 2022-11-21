@@ -1,4 +1,5 @@
 @use "../styles/utils/mixins" as m;
+@use "../styles/utils/variables" as v;
 @use "../pages/Home/Home";
 @use "../pages/Error/error";
 @use "../pages/Rental/Rental";
@@ -13,21 +14,20 @@
 @use "../components/Dropdown/Dropdown";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 .wrapper {
-  height: 100vh;
-  @include m.desktop {
-    max-width: 1240px;
-    margin-top: 40px;
-  }
   max-width: 335px;
   margin: auto;
   margin-top: 20px;
   font-family: "Montserrat";
   width: 100%;
+  @include m.desktop {
+    max-width: 1240px;
+    margin-top: 40px;
+  }
   a {
     text-decoration: none;
   }

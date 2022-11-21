@@ -3,16 +3,16 @@
 
 .dropdown {
   max-width: 1025px;
-  width: 100%;
+  width: v.$full;
   margin: 15px 0;
 }
 
 .dropdown-header {
-  background-color: v.$primary-color;
-  color: white;
+  background-color: map-get(v.$colors, primary);
+  color: map-get(v.$colors, white);
   padding: 10px 15px;
-  border-radius: 10px;
-  display: flex;
+  border-radius: map-get(v.$border-radius, mobile);
+  @include m.flex-center;
   justify-content: space-between;
   align-items: center;
   &__arrow {
@@ -21,16 +21,15 @@
 }
 
 .content {
-  background-color: #f6f6f6;
-  display: flex;
-  align-items: center;
-  color: v.$primary-color;
-  border-radius: 10px;
+  background-color: map-get(v.$colors, grey);
+  @include m.flex-center;
+  color: map-get(v.$colors, primary);
+  border-radius: map-get(v.$border-radius, mobile);
   height: 180px;
   padding: 0 20px;
-  font-size: 12px;
+  font-size: map-get(v.$font-sizes, mobile-text);
   @include m.desktop {
-    font-size: 14px;
+    font-size: map-get(v.$font-sizes, desktop-text);
     height: 120px;
   }
 }

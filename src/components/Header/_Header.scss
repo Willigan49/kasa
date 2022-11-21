@@ -7,20 +7,19 @@
 }
 
 .header {
-  justify-content: space-between;
-  align-items: center;
+  @include m.flex-between-center;
   .menu {
+    gap: map-get(v.$gap, mobile);
     @include m.desktop {
-      gap: 35px;
+      gap: map-get(v.$gap, desktop);
     }
-    gap: 15px;
   }
   a {
     @include m.desktop {
-      font-size: 24px;
+      font-size: map-get(v.$font-sizes, desktop-subtitle);
     }
-    font-size: 15px;
-    color: v.$primary-color;
+    font-size: map-get(v.$font-sizes, mobile-subtitle);
+    color: map-get(v.$colors, primary);
     white-space: nowrap;
     &:hover {
       text-decoration: underline;

@@ -1,4 +1,28 @@
-$primary-color: #FF6060;
-$bradius-desktop: 25px;
 $full: 100%;
+$full-screen: 100vh;
 
+$gap: (
+  desktop: 30px,
+  mobile: 15px,
+);
+
+$border-radius: (
+  desktop: 25px,
+  mobile: 10px,
+);
+
+$colors: (
+  primary: #ff6060,
+  white: white,
+  grey: #f6f6f6,
+  black: #000000,
+);
+
+$font-sizes: (
+  mobile-text: 12px,
+  desktop-text: 14px,
+  mobile-subtitle: 15px,
+  default: 18px,
+  desktop-subtitle: 24px,
+  desktop-title: 48px
+);

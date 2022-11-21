@@ -2,27 +2,26 @@
 @use "../../styles/utils/variables" as v;
 
 .error {
-  height: 100vh;
-  display: flex;
-  align-items: center;
+  height: v.$full-screen;
+  @include m.flex-center;
   flex-direction: column;
   text-align: center;
   justify-content: space-evenly;
   &__description h1 {
     font-size: 100px;
     margin: 0;
-    color: v.$primary-color;
+    color: map-get(v.$colors, primary);
   }
   &__description p {
-    font-size: 15px;
-    color: v.$primary-color;
+    font-size: map-get(v.$font-sizes, mobile-subtitle);
+    color: map-get(v.$colors, primary);
   }
   a {
     @include m.desktop {
-      font-size: 18px;
+      font-size: map-get(v.$font-sizes, default);
     }
-    font-size: 12px;
-    color: v.$primary-color;
+    font-size: map-get(v.$font-sizes, mobile-text);
+    color: map-get(v.$colors, primary);
     white-space: nowrap;
     &:hover {
       text-decoration: underline;

@@ -1,8 +1,6 @@
-@use "../../styles/utils/variables" as v;
-
-.about-dropdowns{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
+@use "../../styles/utils/mixins" as m;
+.about-dropdowns {
+  @include m.flex-center;
+  flex-direction: column;
+  margin-top: 15px;
 }

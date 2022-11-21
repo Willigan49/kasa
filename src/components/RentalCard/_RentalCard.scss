@@ -1,8 +1,8 @@
 @use "../../styles/utils/mixins" as m;
+@use "../../styles/utils/variables" as v;
 
 .rental-card {
-  width: 335px;
-  height: 255px;
+  @include m.box-sizing($width: 335px, $height: 255px);
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -12,23 +12,21 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: map-get(v.$border-radius, mobile);
   @include m.desktop {
-    width: 340px;
-    height: 340px;
+    @include m.box-sizing($width: 340px, $height: 340px);
   }
   &__image {
-    width: 100%;
-    height: 100%;
+    @include m.box-sizing($width: v.$full, $height: v.$full);
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: map-get(v.$border-radius, mobile);
     opacity: 0.5;
   }
   &__title {
-    color: white;
+    color: map-get(v.$colors, white);
     position: absolute;
     font-weight: 500;
-    font-size: 18px;
+    font-size: map-get(v.$font-sizes, default);
     margin-left: 15px;
     width: 200px;
     bottom: 20px;

@@ -1,7 +1,28 @@
 @use "./variables" as v;
 
-@mixin desktop{
-    @media screen and (min-width: 500px){
-        @content;
-    }
+@mixin desktop {
+  @media screen and (min-width: 500px) {
+    @content;
+  }
 }
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-column-center {
+  @include flex-center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin flex-between-center {
+    @include flex-center;
+    justify-content: space-between;
+  }
+
+  @mixin box-sizing($width, $height) {
+    width: $width;
+    height: $height;
+  }

@@ -1,12 +1,13 @@
 @use "../../styles/utils/mixins" as m;
+@use "../../styles/utils/variables" as v;
 
 .rental-container {
   background: none;
   @include m.desktop {
-    border-radius: 25px;
+    border-radius: map-get(v.$border-radius , desktop);
     padding: 50px;
     margin: 45px 0;
-    background: #f7f7f7;
+    background: map-get(v.$colors, grey);
   }
   ul {
     gap: 20px;

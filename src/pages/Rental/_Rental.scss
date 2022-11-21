@@ -1,13 +1,14 @@
 @use "../../styles/utils/mixins" as m;
+@use "../../styles/utils/variables" as v;
+
 .rental {
   &__host {
-    display: flex;
-    align-items: center;
+    @include m.flex-center;
     font-weight: 500;
-    color: #ff6060;
-    font-size: 12px;
+    color: map-get(v.$colors, primary);
+    font-size: map-get(v.$font-sizes, mobile-text);
     text-align: end;
-    gap: 15px;
+    gap: map-get(v.$gap, mobile);
   }
   &__rating {
     width: 120px;
@@ -17,25 +18,25 @@
     gap: 1em;
     font-size: 10px;
     @include m.desktop {
-      font-size: 14px;
+      font-size: map-get(v.$font-sizes, desktop-text);
     }
   }
   &__title {
-    font-size: 18px;
+    font-size: map-get(v.$font-sizes, default);
     font-weight: 500;
     color: #ff6060;
     margin-bottom: 10px;
     @include m.desktop {
-      font-size: 24px;
+      font-size: map-get(v.$font-sizes, desktop-subtitle);
     }
   }
   &__location {
     color: #ff6060;
     font-weight: 500;
-    font-size: 14px;
+    font-size: map-get(v.$font-sizes, desktop-text);
     margin-bottom: 15px;
     @include m.desktop {
-      font-size: 18px;
+      font-size: map-get(v.$font-sizes, default);
     }
   }
   &__host-picture{
@@ -54,10 +55,10 @@
 
   &__right {
     margin-top: 10px;
-    display: flex;
+    @include m.flex-center;
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
+
     gap: 20px;
     @include m.desktop {
       flex-direction: column;

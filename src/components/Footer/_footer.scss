@@ -1,25 +1,23 @@
 @use "../../styles/utils/mixins" as m;
+@use "../../styles/utils/variables" as v;
 
 .footer {
   height: 210px;
   position: absolute;
   left: 0;
-  width: 100%;
-  background: #000000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+  width: v.$full;
+  background: map-get(v.$colors, black);
+  @include m.flex-column-center;
+  gap: map-get(v.$gap, mobile);
   img {
     max-width: 122px;
-    width: 100%;
+    width: v.$full;
   }
   p {
-    font-size: 12px;
-    color: white;
+    font-size: map-get(v.$font-sizes, mobile-text);
+    color: map-get(v.$colors, white);
     @include m.desktop {
-      font-size: 24px;
+      font-size: map-get(v.$font-sizes, desktop-text);
     }
   }
 }
