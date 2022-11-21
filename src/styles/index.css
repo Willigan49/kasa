@@ -33,12 +33,12 @@
   justify-content: space-evenly;
 }
 .error__description h1 {
-  font-size: 288px;
+  font-size: 100px;
   margin: 0;
   color: #FF6060;
 }
 .error__description p {
-  font-size: 36px;
+  font-size: 15px;
   color: #FF6060;
 }
 .error a {
@@ -58,51 +58,86 @@
 .rental__host {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 30px;
   font-weight: 500;
   color: #ff6060;
-  font-size: 18px;
+  font-size: 12px;
+  text-align: end;
+  gap: 15px;
 }
 .rental__rating {
-  width: 10em;
+  width: 120px;
 }
 .rental__tags {
   display: flex;
   gap: 1em;
+  font-size: 10px;
+}
+@media screen and (min-width: 500px) {
+  .rental__tags {
+    font-size: 14px;
+  }
 }
 .rental__title {
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 500;
   color: #ff6060;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 500px) {
+  .rental__title {
+    font-size: 24px;
+  }
 }
 .rental__location {
   color: #ff6060;
   font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 500px) {
+  .rental__location {
+    font-size: 18px;
+  }
 }
 .rental__host-picture {
   border-radius: 50%;
-  width: 65px;
+  width: 50px;
 }
 
 .informations {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (min-width: 500px) {
+  .informations {
+    flex-direction: row;
+  }
 }
 .informations__right {
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
+}
+@media screen and (min-width: 500px) {
+  .informations__right {
+    flex-direction: column;
+  }
 }
 
 .dropdowns {
-  margin: 15px 0;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  gap: 80px;
+}
+@media screen and (min-width: 500px) {
+  .dropdowns {
+    flex-direction: row;
+    gap: 70px;
+  }
 }
 
 .about-dropdowns {
@@ -130,7 +165,7 @@
   }
 }
 .header a {
-  font-size: 12px;
+  font-size: 15px;
   color: #FF6060;
   white-space: nowrap;
 }
@@ -211,6 +246,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 .footer img {
   max-width: 122px;
@@ -257,6 +293,7 @@
   font-size: 18px;
   margin-left: 15px;
   width: 200px;
+  bottom: 20px;
 }
 
 .slider {
@@ -344,7 +381,7 @@
 .dropdown-header {
   background-color: #FF6060;
   color: white;
-  padding: 15px;
+  padding: 10px 15px;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -360,8 +397,15 @@
   align-items: center;
   color: #FF6060;
   border-radius: 10px;
-  height: 200px;
+  height: 180px;
   padding: 0 20px;
+  font-size: 12px;
+}
+@media screen and (min-width: 500px) {
+  .content {
+    font-size: 14px;
+    height: 120px;
+  }
 }
 
 .close {

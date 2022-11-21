@@ -34,10 +34,13 @@ export default function About() {
         page="about"
       />
       <div className="about-dropdowns">
-        {abouts.map((about) => (
-          <Dropdown title={about.title} informations={about.content} />
+        {abouts.map((about, index) => (
+          <Dropdown
+            key={`${index} - ${about.title}`}
+            title={about.title}
+            informations={about.content}
+          />
         ))}
-        ;
       </div>
     </div>
   );

@@ -9,12 +9,12 @@
   text-align: center;
   justify-content: space-evenly;
   &__description h1 {
-    font-size: 288px;
+    font-size: 100px;
     margin: 0;
     color: v.$primary-color;
   }
   &__description p {
-    font-size: 36px;
+    font-size: 15px;
     color: v.$primary-color;
   }
   a {

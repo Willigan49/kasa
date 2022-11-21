@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ChevronUp, ChevronDown } from "@ricons/fa";
 
 export default function Dropdown({ title, informations }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="dropdown">

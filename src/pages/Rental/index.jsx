@@ -65,6 +65,3 @@ export default function Rental() {
     </div>
   );
 }
-
-// right - left: mettre en composant
-//rajouter un catch dans fetch et afficher un rendu
