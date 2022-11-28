@@ -1,7 +1,10 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 
 export default function Header() {
+  let activeStyle = {
+    textDecoration: "underline",
+  };
   return (
     <header>
       <div className="header">
@@ -9,10 +12,21 @@ export default function Header() {
         <nav>
           <ul className="menu">
             <li>
-              <Link to="/">Accueil</Link>
+              <NavLink
+                to="/"
+                end
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
+                Accueil
+              </NavLink>
             </li>
             <li>
-              <Link to="/about">A propos</Link>
+              <NavLink
+                to="/about"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
+                A propos
+              </NavLink>
             </li>
           </ul>
         </nav>
