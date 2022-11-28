@@ -31,6 +31,15 @@ export default function Slider({ slides }) {
           )}
         </div>
       ))}
+      {slides.length > 1 ? (
+        <>
+          <div className="count">
+            <p>
+              {currentSlide + 1}/{slideLength}
+            </p>
+          </div>
+        </>
+      ) : null}
     </section>
   );
 }

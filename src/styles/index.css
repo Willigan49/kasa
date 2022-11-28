@@ -266,7 +266,7 @@
 .rental-card {
   width: 335px;
   height: 255px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -349,6 +349,12 @@
   .slider__right-arrow {
     width: 3%;
   }
+}
+.slider .count {
+  color: white;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
 }
 
 .rating {

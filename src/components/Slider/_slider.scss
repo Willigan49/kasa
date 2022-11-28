@@ -45,4 +45,10 @@
             width: 3%;
         }
     }
+    .count{
+        color: map-get(v.$colors, white);
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+    }
 }
